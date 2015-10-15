@@ -12,23 +12,30 @@ class ViewController: UIViewController {
     
     var activePlayer = 1  //1 = noughts, 2 = crosses
     
+    var gameState = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+        //0 represents no selection, 1 = nought, and 2 = cross
+    
     @IBOutlet var button: UIButton!
     
     @IBAction func buttonPressed(sender: AnyObject) {
         
-        if activePlayer == 1 {
+        if sender.tag == 0 {
+            
+            gameState[sender.tag] = activePlayer
         
-            sender.setImage(UIImage(named: "nought.png"), forState: .Normal)
+            if activePlayer == 1 {
+        
+                sender.setImage(UIImage(named: "nought.png"), forState: .Normal)
             
-            activePlayer = 2
+                activePlayer = 2
             
+            } else {
             
-        } else {
+                sender.setImage(UIImage(named: "cross.png"), forState: .Normal)
             
-            sender.setImage(UIImage(named: "cross.png"), forState: .Normal)
+                activePlayer = 1
             
-            activePlayer = 1
-            
+            }
         }
         
     }
