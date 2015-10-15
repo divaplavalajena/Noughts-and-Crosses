@@ -19,6 +19,36 @@ class ViewController: UIViewController {
     
     var gameActive = true
     
+    @IBOutlet var playAgainButton: UIButton!
+    
+    @IBAction func playAgain(sender: AnyObject) {
+        
+        gameState = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+        
+        activePlayer = 1
+        
+        gameActive = true
+        
+        gameOverLabel.hidden = true
+        
+        gameOverLabel.center = CGPointMake(gameOverLabel.center.x - 500, gameOverLabel.center.y)
+        
+        playAgainButton.hidden = true
+        
+        playAgainButton.center = CGPointMake(playAgainButton.center.x - 500, playAgainButton.center.y)
+        
+        var buttonToClear : UIButton
+        
+        for var i = 0; i < 9; i++ {
+            
+            buttonToClear = view.viewWithTag(i) as! UIButton
+            
+            buttonToClear.setImage(nil, forState: .Normal)
+            
+        }
+        
+    }
+    
     @IBOutlet var button: UIButton!
     
     @IBOutlet var gameOverLabel: UILabel!
@@ -60,10 +90,13 @@ class ViewController: UIViewController {
                     }
                     
                     gameOverLabel.hidden = false
+                    playAgainButton.hidden = false
                     
                     UIView.animateWithDuration(0.5, animations: { () -> Void in
                         
                         self.gameOverLabel.center = CGPointMake(self.gameOverLabel.center.x + 500, self.gameOverLabel.center.y)
+                        
+                        self.playAgainButton.center = CGPointMake(self.playAgainButton.center.x + 500, self.playAgainButton.center.y)
                         
                         
                     })
@@ -84,6 +117,10 @@ class ViewController: UIViewController {
         gameOverLabel.hidden = true
         
         gameOverLabel.center = CGPointMake(gameOverLabel.center.x - 500, gameOverLabel.center.y)
+        
+        playAgainButton.hidden = true
+        
+        playAgainButton.center = CGPointMake(playAgainButton.center.x - 500, playAgainButton.center.y)
         
     }
 
