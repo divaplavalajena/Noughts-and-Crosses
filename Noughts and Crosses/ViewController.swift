@@ -89,24 +89,56 @@ class ViewController: UIViewController {
                         
                     }
                     
-                    gameOverLabel.hidden = false
-                    playAgainButton.hidden = false
-                    
-                    UIView.animateWithDuration(0.5, animations: { () -> Void in
-                        
-                        self.gameOverLabel.center = CGPointMake(self.gameOverLabel.center.x + 500, self.gameOverLabel.center.y)
-                        
-                        self.playAgainButton.center = CGPointMake(self.playAgainButton.center.x + 500, self.playAgainButton.center.y)
-                        
-                        
-                    })
-                    
+                    endGame()
                 }
                 
             }
+            
+            if gameActive == true {
+            
+                gameActive = false
+            
+                for buttonState in gameState {
+                
+                    if buttonState == 0 {
+                    
+                        gameActive = true
+                    
+                    }
+                
+                
+                }
+            
+                if gameActive == false {
+                
+                    gameOverLabel.text = "Its a draw!"
+                
+                    endGame()
+                
+                }
+                
+            }
+            
         }
         
     }
+    
+    func endGame(){
+    
+        gameOverLabel.hidden = false
+        playAgainButton.hidden = false
+    
+        UIView.animateWithDuration(0.5, animations: { () -> Void in
+    
+            self.gameOverLabel.center = CGPointMake(self.gameOverLabel.center.x + 500, self.gameOverLabel.center.y)
+    
+            self.playAgainButton.center = CGPointMake(self.playAgainButton.center.x + 500, self.playAgainButton.center.y)
+    
+    
+        })
+        
+    }
+
     
     
 
