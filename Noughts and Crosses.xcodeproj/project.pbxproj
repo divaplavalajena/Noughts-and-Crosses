@@ -12,6 +12,9 @@
 		9C7254AA1BD03AAD006C8C16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C7254A81BD03AAD006C8C16 /* Main.storyboard */; };
 		9C7254AC1BD03AAD006C8C16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C7254AB1BD03AAD006C8C16 /* Assets.xcassets */; };
 		9C7254AF1BD03AAD006C8C16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C7254AD1BD03AAD006C8C16 /* LaunchScreen.storyboard */; };
+		9C7254B81BD042D4006C8C16 /* board.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C7254B61BD042D4006C8C16 /* board.png */; settings = {ASSET_TAGS = (); }; };
+		9C7254B91BD042D4006C8C16 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C7254B71BD042D4006C8C16 /* cross.png */; settings = {ASSET_TAGS = (); }; };
+		9C7254BB1BD042DF006C8C16 /* nought.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C7254BA1BD042DF006C8C16 /* nought.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		9C7254AB1BD03AAD006C8C16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C7254AE1BD03AAD006C8C16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C7254B01BD03AAD006C8C16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C7254B61BD042D4006C8C16 /* board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = board.png; sourceTree = "<group>"; };
+		9C7254B71BD042D4006C8C16 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
+		9C7254BA1BD042DF006C8C16 /* nought.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nought.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 				9C7254A61BD03AAD006C8C16 /* ViewController.swift */,
 				9C7254A81BD03AAD006C8C16 /* Main.storyboard */,
 				9C7254AB1BD03AAD006C8C16 /* Assets.xcassets */,
+				9C7254B61BD042D4006C8C16 /* board.png */,
+				9C7254B71BD042D4006C8C16 /* cross.png */,
+				9C7254BA1BD042DF006C8C16 /* nought.png */,
 				9C7254AD1BD03AAD006C8C16 /* LaunchScreen.storyboard */,
 				9C7254B01BD03AAD006C8C16 /* Info.plist */,
 			);
@@ -122,6 +131,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C7254B91BD042D4006C8C16 /* cross.png in Resources */,
+				9C7254B81BD042D4006C8C16 /* board.png in Resources */,
+				9C7254BB1BD042DF006C8C16 /* nought.png in Resources */,
 				9C7254AF1BD03AAD006C8C16 /* LaunchScreen.storyboard in Resources */,
 				9C7254AC1BD03AAD006C8C16 /* Assets.xcassets in Resources */,
 				9C7254AA1BD03AAD006C8C16 /* Main.storyboard in Resources */,
