@@ -17,13 +17,15 @@ class ViewController: UIViewController {
     
     let winningCombinations = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]]
     
+    var gameActive = true
+    
     @IBOutlet var button: UIButton!
     
     @IBOutlet var gameOverLabel: UILabel!
     
     @IBAction func buttonPressed(sender: AnyObject) {
         
-        if gameState[sender.tag] == 0 {
+        if (gameState[sender.tag] == 0 && gameActive == true) {
             
             gameState[sender.tag] = activePlayer
         
@@ -44,6 +46,8 @@ class ViewController: UIViewController {
             for combination in winningCombinations {
                 
                 if (gameState[combination[0]] != 0 && gameState[combination[0]] == gameState[combination[1]] && gameState[combination[1]] == gameState[combination[2]]) {
+                    
+                    gameActive = false
                     
                     if gameState[combination[0]] == 1 {
                         
