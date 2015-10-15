@@ -122,13 +122,15 @@
                             </label>
                             <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glu-Y9-cIz">
                                 <rect key="frame" x="152" y="415" width="71" height="30"/>
-                                <state key="normal" title="Play Again"/>
+                                <state key="normal" title="Play Again">
+                                    <color key="titleColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="playAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6AX-DQ-SUL"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="VlO-X1-gNm" firstAttribute="top" secondItem="fNz-6h-0SR" secondAttribute="bottom" constant="-110" id="39b-AN-B0g"/>
                             <constraint firstItem="VlO-X1-gNm" firstAttribute="leading" secondItem="DAo-zA-zcp" secondAttribute="trailing" constant="-115" id="9pl-wn-Fw2"/>
