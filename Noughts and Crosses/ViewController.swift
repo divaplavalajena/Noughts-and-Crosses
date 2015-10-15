@@ -9,6 +9,31 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var activePlayer = 1  //1 = noughts, 2 = crosses
+    
+    @IBOutlet var button: UIButton!
+    
+    @IBAction func buttonPressed(sender: AnyObject) {
+        
+        if activePlayer == 1 {
+        
+            sender.setImage(UIImage(named: "nought.png"), forState: .Normal)
+            
+            activePlayer = 2
+            
+            
+        } else {
+            
+            sender.setImage(UIImage(named: "cross.png"), forState: .Normal)
+            
+            activePlayer = 1
+            
+        }
+        
+    }
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
