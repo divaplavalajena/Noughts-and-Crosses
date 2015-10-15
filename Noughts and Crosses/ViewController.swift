@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     
     @IBAction func buttonPressed(sender: AnyObject) {
         
-        if sender.tag == 0 {
+        if gameState[sender.tag] == 0 {
             
             gameState[sender.tag] = activePlayer
         
